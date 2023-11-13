@@ -2,7 +2,7 @@
 
 mkdir -p public/{style/,js/,src/{image/,fonts/,video/,music/},page/}
 touch index.html 
-touch public/css/style.css 
+touch public/style/style.css 
 touch public/js/main.js
 
 sleep 1
