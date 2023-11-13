@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir -p public/{css/,js/,src/{img/,fonts/,video/},pages/}
+mkdir -p public/{css/,js/,src/{img/,fonts/,video/,music/},pages/}
 touch index.html 
 touch public/css/style.css 
 touch public/js/main.js
