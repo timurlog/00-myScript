@@ -1,14 +1,11 @@
 #!/bin/bash
 
-mkdir -p public/{css/,js/,src/{img/,fonts/,video/,music/},pages/}
+mkdir -p public/{style/,js/,src/{image/,fonts/,video/,music/},page/}
 touch index.html 
 touch public/css/style.css 
 touch public/js/main.js
 
-
 sleep 1
-
-tree
 
 echo
 echo "###################################"
@@ -16,3 +13,6 @@ echo "#                                 #"
 echo "#      AUTOEXEC EST EXECUTE       #"
 echo "#                                 #"
 echo "###################################"
+echo
+
+tree
