@@ -15,7 +15,7 @@ echo "#                                 #"
 echo "###################################"
 echo
 
-# Redirection du contenu HTML dans index.html
+# index.html
 cat <<HTML_EOF > index.html
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +47,7 @@ cat <<HTML_EOF > index.html
 </html>
 HTML_EOF
 
-# Redirection du contenu CSS dans style.css
+# style.css
 cat <<CSS_EOF > public/style/style.css
 /* FONTS */
 
@@ -58,6 +58,8 @@ cat <<CSS_EOF > public/style/style.css
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -78,6 +80,26 @@ body {
 
 
 /* RESPONSIVE */
+
+/* SMARTPHONE */
+@media (max-width: 576px) {
+
+}
+
+/* TABLET */
+@media (min-width: 576px) and (max-width: 768px) {
+    
+}
+
+/* DESKTOP */
+@media (min-width: 768px) and (max-width: 992px) {
+    
+}
+
+/* BIG DESKTOP */
+@media (min-width: 992px) {
+
+}
 CSS_EOF
 
 tree
