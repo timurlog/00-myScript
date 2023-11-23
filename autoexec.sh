@@ -27,6 +27,7 @@ cat <<HTML_EOF > index.html
     <!-- LINKS -->
     <link rel="stylesheet" href="./public/style/style.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -56,6 +57,7 @@ cat <<CSS_EOF > public/style/style.css
 /* BODY */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -87,17 +89,17 @@ body {
 }
 
 /* TABLET */
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
     
 }
 
 /* DESKTOP */
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
     
 }
 
 /* BIG DESKTOP */
-@media (min-width: 992px) {
+@media (min-width: 993px) {
 
 }
 CSS_EOF
