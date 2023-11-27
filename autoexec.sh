@@ -40,7 +40,7 @@ cat <<HTML_EOF > index.html
     <!-- ########### MAIN ########### -->
     <main>
         <!-- ###  ### -->
-        <section>
+        <section class=''>
 
         </section>
     </main>
