@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mkdir -p public/{style/,js/,src/{image/,fonts/,video/,music/},page/}
-mkdir -p src/{sass/,scss/}
-touch index.html 
+mkdir -p public/{style/,js/,page/}
+mkdir -p src/{sass/,scss/,assets/{image/,fonts/,video/,music/}}
+touch index.html
 touch public/style/style.css
 touch src/sass/style.sass
 touch src/scss/style.scss
