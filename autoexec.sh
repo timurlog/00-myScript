@@ -103,4 +103,58 @@ body
 
 CSS_EOF
 
+# style.scss
+cat <<CSS_EOF > src/scss/style.scss
+/* ########### FONTS ############ */
+
+
+/* ############ BODY ############  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ########### HEADER ########### */
+
+
+/* ############ MAIN ############ */
+
+
+/* ########### FOOTER ########### */
+
+
+/* ######### RESPONSIVE ######### */
+/* ### SMARTPHONE ### */
+@media (max-width: 576px) {
+
+}
+
+
+/* ### TABLET ### */
+@media (min-width: 577px) and (max-width: 768px) {
+
+}
+
+
+/* ### DESKTOP ### */
+@media (min-width: 769px) and (max-width: 992px) {
+
+}
+
+
+/* ### BIG DESKTOP ### */
+@media (min-width: 993px) {
+    
+}
+
+CSS_EOF
+
 tree
