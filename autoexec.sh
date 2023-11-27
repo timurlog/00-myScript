@@ -1,9 +1,11 @@
 #!/bin/bash
 
-mkdir -p public/{style/,js/,src/{image/,fonts/,video/,music/,sass/},page/}
+mkdir -p public/{style/,js/,src/{image/,fonts/,video/,music/},page/}
+mkdir -p src/{sass/,scss/}
 touch index.html 
 touch public/style/style.css
-touch public/src/sass/style.sass
+touch src/sass/style.sass
+touch src/scss/style.scss
 touch public/js/main.js
 
 sleep 1
@@ -33,7 +35,7 @@ cat <<HTML_EOF > index.html
 </head>
 <body>
     <!-- ########## HEADER ########## -->
-    <header class='header'>
+    <header>
 
     </header>
 
@@ -46,7 +48,7 @@ cat <<HTML_EOF > index.html
     </main>
 
     <!-- ########## FOOTER ########## -->
-    <footer class='footer'>
+    <footer>
 
     </footer>
 
@@ -58,7 +60,7 @@ cat <<HTML_EOF > index.html
 HTML_EOF
 
 # style.sass
-cat <<CSS_EOF > public/src/sass/style.sass
+cat <<CSS_EOF > src/sass/style.sass
 /* ########### FONTS ############ */
 
 
