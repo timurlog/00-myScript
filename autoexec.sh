@@ -137,24 +137,20 @@ body {
 
 }
 
-
 /* ### TABLET ### */
 @media (min-width: 577px) and (max-width: 768px) {
 
 }
-
 
 /* ### DESKTOP ### */
 @media (min-width: 769px) and (max-width: 992px) {
 
 }
 
-
 /* ### BIG DESKTOP ### */
 @media (min-width: 993px) {
-    
-}
 
+}
 CSS_EOF
 
 tree
