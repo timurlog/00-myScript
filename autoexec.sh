@@ -117,7 +117,7 @@ cat <<SASS_EOF > src/sass/app.sass
 @import ./modules/_body.sass
 @import ./modules/_header.sass
 @import ./modules/_main.sass
-@import ./modules/_section1.sass
+@import ./modules/_section-1.sass
 @import ./modules/_footer.sass
 SASS_EOF
 
