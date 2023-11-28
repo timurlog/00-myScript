@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir -p public/{style/,js/,page/,assets/{image/,fonts/,video/,music/}}
-mkdir -p src/{sass/modules,scss/modules}
+mkdir -p src/sass/modules
 touch index.html public/style/style.css public/js/main.js src/sass/app.sass src/sass/_variables.sass src/sass/_fonts.sass src/sass/modules/_body.sass src/sass/modules/_header.sass src/sass/modules/_footer.sass src/sass/modules/_main.sass src/sass/modules/_section1.sass
 
 sleep 1
