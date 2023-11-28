@@ -119,20 +119,16 @@ cat <<SASS_EOF > src/sass/app.sass
 @import ./modules/_main.sass
 @import ./modules/_section1.sass
 @import ./modules/_footer.sass
-
-
 SASS_EOF
 
 # _variables.sass
 cat <<SASS_EOF > src/sass/_variables.sass
 /* ######### VARIABLES ########## */
-
 SASS_EOF
 
 # _fonts.sass
 cat <<SASS_EOF > src/sass/_fonts.sass
 /* ########### FONTS ############ */
-
 SASS_EOF
 
 # _body.sass
@@ -148,7 +144,6 @@ cat <<SASS_EOF > src/sass/modules/_body.sass
 body
     background-color: #FFFFFF
     font-family: Arial, Helvetica, sans-serif
-
 SASS_EOF
 
 # _header.sass
@@ -171,7 +166,6 @@ cat <<SASS_EOF > src/sass/modules/_header.sass
 
 /* ### BIG DESKTOP ### */
 @media (min-width: 993px)
-
 SASS_EOF
 
 # _main.sass
@@ -194,7 +188,6 @@ cat <<SASS_EOF > src/sass/modules/_main.sass
 
 /* ### BIG DESKTOP ### */
 @media (min-width: 993px)
-
 SASS_EOF
 
 # _section1.sass
@@ -217,7 +210,6 @@ cat <<SASS_EOF > src/sass/modules/_section1.sass
 
 /* ### BIG DESKTOP ### */
 @media (min-width: 993px)
-
 SASS_EOF
 
 # _footer.sass
@@ -240,7 +232,6 @@ cat <<SASS_EOF > src/sass/modules/_footer.sass
 
 /* ### BIG DESKTOP ### */
 @media (min-width: 993px)
-
 SASS_EOF
 
 
