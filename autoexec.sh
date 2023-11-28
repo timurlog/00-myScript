@@ -123,7 +123,7 @@ SASS_EOF
 
 # _variables.sass
 cat <<SASS_EOF > src/sass/_variables.sass
-/* ######### VARIABLES ########## */
+// VARIABLES
 SASS_EOF
 
 # _fonts.sass
