@@ -2,7 +2,7 @@
 
 mkdir -p public/{style/,js/,page/,assets/{image/,fonts/,video/,music/}}
 mkdir -p src/sass/modules
-touch index.html public/style/style.css public/js/main.js src/sass/app.sass src/sass/_variables.sass src/sass/_fonts.sass src/sass/modules/_body.sass src/sass/modules/_header.sass src/sass/modules/_footer.sass src/sass/modules/_main.sass src/sass/modules/_section-1.sass
+touch index.html public/style/app.css public/js/main.js src/sass/app.sass src/sass/_variables.sass src/sass/_fonts.sass src/sass/modules/_body.sass src/sass/modules/_header.sass src/sass/modules/_footer.sass src/sass/modules/_main.sass src/sass/modules/_section-1.sass
 
 sleep 1
 
@@ -55,8 +55,8 @@ cat <<HTML_EOF > index.html
 </html>
 HTML_EOF
 
-# style.css
-cat <<CSS_EOF > public/style/style.css
+# app.css
+cat <<CSS_EOF > public/style/app.css
 /* ########### FONTS ############ */
 
 
