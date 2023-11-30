@@ -142,6 +142,9 @@ SASS_EOF
 # _fonts.sass
 cat <<SASS_EOF > src/sass/_fonts.sass
 /* ########### FONTS ############ */
+@font-face
+    font-family: ""
+    src: url("../assets/fonts/")
 SASS_EOF
 
 # _body.sass
