@@ -95,12 +95,12 @@ body {
 }
 
 /* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 
 }
 
 /* ### BIG DESKTOP ### */
-@media (min-width: 993px) {
+@media (min-width: 1025px) {
 
 }
 CSS_EOF
@@ -124,6 +124,19 @@ SASS_EOF
 # _variables.sass
 cat <<SASS_EOF > src/sass/_variables.sass
 // VARIABLES
+// BODY
+
+
+// HEADER
+
+
+// MAIN
+
+
+// SECTION 1
+
+
+// FOOTER
 SASS_EOF
 
 # _fonts.sass
@@ -161,11 +174,11 @@ cat <<SASS_EOF > src/sass/modules/_header.sass
 
 
 /* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 992px)
+@media (min-width: 769px) and (max-width: 1024px)
 
 
 /* ### BIG DESKTOP ### */
-@media (min-width: 993px)
+@media (min-width: 1025px)
 SASS_EOF
 
 # _main.sass
@@ -183,11 +196,11 @@ cat <<SASS_EOF > src/sass/modules/_main.sass
 
 
 /* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 992px)
+@media (min-width: 769px) and (max-width: 1024px)
 
 
 /* ### BIG DESKTOP ### */
-@media (min-width: 993px)
+@media (min-width: 1025px)
 SASS_EOF
 
 # _section-1.sass
@@ -205,11 +218,11 @@ cat <<SASS_EOF > src/sass/modules/_section-1.sass
 
 
 /* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 992px)
+@media (min-width: 769px) and (max-width: 1024px)
 
 
 /* ### BIG DESKTOP ### */
-@media (min-width: 993px)
+@media (min-width: 1025px)
 SASS_EOF
 
 # _footer.sass
@@ -227,11 +240,11 @@ cat <<SASS_EOF > src/sass/modules/_footer.sass
 
 
 /* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 992px)
+@media (min-width: 769px) and (max-width: 1024px)
 
 
 /* ### BIG DESKTOP ### */
-@media (min-width: 993px)
+@media (min-width: 1025px)
 SASS_EOF
 
 
