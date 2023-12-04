@@ -24,7 +24,7 @@ cat <<HTML_EOF > index.html
     <title>Document</title>
 
     <!-- ########## LINKS ########### -->
-    <link rel="stylesheet" href="./public/style/style.css">
+    <link rel="stylesheet" href="./public/style/app.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
 
