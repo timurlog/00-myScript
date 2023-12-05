@@ -3,6 +3,10 @@
 mkdir -p public/{style/,js/,page/,assets/{image/,fonts/,video/,music/}}
 mkdir -p src/sass/modules
 touch index.html public/style/app.css public/js/main.js src/sass/app.sass src/sass/_variables.sass src/sass/_fonts.sass src/sass/modules/_body.sass src/sass/modules/_header.sass src/sass/modules/_footer.sass src/sass/modules/_main.sass src/sass/modules/_section-1.sass
+npm init
+npm install bootstrap@5.3.2
+npm install @popperjs/core
+npm install @fortawesome/fontawesome-free
 
 sleep 1
 
@@ -24,9 +28,8 @@ cat <<HTML_EOF > index.html
     <title>Document</title>
 
     <!-- ########## LINKS ########### -->
-    <link rel="stylesheet" href="./public/style/app.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="./public/style/app.css">
 
 </head>
 <body>
