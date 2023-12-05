@@ -8,16 +8,6 @@ npm install bootstrap@5.3.2
 npm install @popperjs/core
 npm install @fortawesome/fontawesome-free
 
-sleep 1
-
-echo
-echo "###################################"
-echo "#                                 #"
-echo "#      AUTOEXEC EST EXECUTE       #"
-echo "#                                 #"
-echo "###################################"
-echo
-
 # index.html
 cat <<HTML_EOF > index.html
 <!DOCTYPE html>
@@ -30,6 +20,8 @@ cat <<HTML_EOF > index.html
     <!-- ########## LINKS ########### -->
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="./public/style/app.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
 
 </head>
 <body>
@@ -53,6 +45,8 @@ cat <<HTML_EOF > index.html
 
     <!-- ########## SCRIPTS ######### -->
     <script src="./public/js/main.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
 
 </body>
 </html>
@@ -256,3 +250,11 @@ SASS_EOF
 
 
 tree
+
+echo
+echo "###################################"
+echo "#                                 #"
+echo "#      AUTOEXEC EST EXECUTE       #"
+echo "#                                 #"
+echo "###################################"
+echo
