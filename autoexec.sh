@@ -2,10 +2,8 @@
 
 mkdir -p public/{style/,js/,page/,assets/{image/,fonts/,video/,music/}}
 mkdir -p src/sass/modules
-touch index.html public/style/app.css public/js/main.js src/sass/app.sass src/sass/_variables.sass src/sass/_fonts.sass src/sass/modules/_body.sass src/sass/modules/_header.sass src/sass/modules/_footer.sass src/sass/modules/_main.sass src/sass/modules/_section-1.sass
+touch index.html public/style/app.css public/js/main.js src/sass/app.sass src/sass/_variables.sass src/sass/_fonts.sass src/sass/modules/_body.sass src/sass/modules/_header.sass src/sass/modules/_footer.sass src/sass/modules/_main.sass
 npm init
-npm install bootstrap@5.3.2
-npm install @popperjs/core
 npm install @fortawesome/fontawesome-free
 
 # index.html
@@ -16,91 +14,16 @@ cat <<HTML_EOF > index.html
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <!-- ########## LINKS ########### -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="./public/style/app.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
 
 </head>
 <body>
-    <!-- ########## HEADER ########## -->
-    <header>
 
-    </header>
-
-    <!-- ########### MAIN ########### -->
-    <main>
-        <!-- ###  ### -->
-        <section class=''>
-
-        </section>
-    </main>
-
-    <!-- ########## FOOTER ########## -->
-    <footer>
-
-    </footer>
-
-    <!-- ########## SCRIPTS ######### -->
     <script src="./public/js/main.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
-
 </body>
 </html>
 HTML_EOF
-
-# app.css
-cat <<CSS_EOF > public/style/app.css
-/* ########### FONTS ############ */
-
-
-/* ############ BODY ############  */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-body {
-    background-color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* ########### HEADER ########### */
-
-
-/* ############ MAIN ############ */
-
-
-/* ########### FOOTER ########### */
-
-
-/* ######### RESPONSIVE ######### */
-/* ### SMARTPHONE ### */
-@media (max-width: 576px) {
-
-}
-
-/* ### TABLET ### */
-@media (min-width: 577px) and (max-width: 768px) {
-
-}
-
-/* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 1024px) {
-
-}
-
-/* ### BIG DESKTOP ### */
-@media (min-width: 1025px) {
-
-}
-CSS_EOF
 
 # app.sass
 cat <<SASS_EOF > src/sass/app.sass
@@ -114,7 +37,6 @@ cat <<SASS_EOF > src/sass/app.sass
 @import ./modules/_body.sass
 @import ./modules/_header.sass
 @import ./modules/_main.sass
-@import ./modules/_section-1.sass
 @import ./modules/_footer.sass
 SASS_EOF
 
@@ -130,15 +52,13 @@ cat <<SASS_EOF > src/sass/_variables.sass
 // MAIN
 
 
-// SECTION 1
-
-
 // FOOTER
 SASS_EOF
 
 # _fonts.sass
 cat <<SASS_EOF > src/sass/_fonts.sass
-/* ########### FONTS ############ */
+/* FONTS */
+
 @font-face
     font-family: ""
     src: url("../assets/fonts/")
@@ -146,115 +66,78 @@ SASS_EOF
 
 # _body.sass
 cat <<SASS_EOF > src/sass/modules/_body.sass
-/* ############ BODY ############  */
-*
-    box-sizing: border-box
-    margin: 0
-    padding: 0
-    text-decoration: none
-    list-style: none
+/* BODY */
 
 body
+    margin: 0
+    padding: 0
     background-color: #FFFFFF
     font-family: Arial, Helvetica, sans-serif
 SASS_EOF
 
 # _header.sass
 cat <<SASS_EOF > src/sass/modules/_header.sass
-/* ########### HEADER ########### */
+/* HEADER */
 
 
-/* ######### RESPONSIVE ######### */
-/* ### SMARTPHONE ### */
+/* RESPONSIVE */
 @media (max-width: 576px)
 
 
-/* ### TABLET ### */
 @media (min-width: 577px) and (max-width: 768px)
 
 
-/* ### DESKTOP ### */
 @media (min-width: 769px) and (max-width: 1024px)
 
 
-/* ### BIG DESKTOP ### */
 @media (min-width: 1025px)
 SASS_EOF
 
 # _main.sass
 cat <<SASS_EOF > src/sass/modules/_main.sass
-/* ############ MAIN ############ */
+/* MAIN */
 
 
-/* ######### RESPONSIVE ######### */
-/* ### SMARTPHONE ### */
+/* RESPONSIVE */
 @media (max-width: 576px)
 
 
-/* ### TABLET ### */
 @media (min-width: 577px) and (max-width: 768px)
 
 
-/* ### DESKTOP ### */
 @media (min-width: 769px) and (max-width: 1024px)
 
 
-/* ### BIG DESKTOP ### */
 @media (min-width: 1025px)
 SASS_EOF
 
-# _section-1.sass
-cat <<SASS_EOF > src/sass/modules/_section-1.sass
-/* ### SECTION 1 ### */
-
-
-/* ######### RESPONSIVE ######### */
-/* ### SMARTPHONE ### */
-@media (max-width: 576px)
-
-
-/* ### TABLET ### */
-@media (min-width: 577px) and (max-width: 768px)
-
-
-/* ### DESKTOP ### */
-@media (min-width: 769px) and (max-width: 1024px)
-
-
-/* ### BIG DESKTOP ### */
-@media (min-width: 1025px)
-SASS_EOF
 
 # _footer.sass
 cat <<SASS_EOF > src/sass/modules/_footer.sass
-/* ########### FOOTER ########### */
+/* FOOTER */
 
 
-/* ######### RESPONSIVE ######### */
-/* ### SMARTPHONE ### */
+/* RESPONSIVE */
 @media (max-width: 576px)
 
 
-/* ### TABLET ### */
 @media (min-width: 577px) and (max-width: 768px)
 
 
-/* ### DESKTOP ### */
 @media (min-width: 769px) and (max-width: 1024px)
 
 
-/* ### BIG DESKTOP ### */
 @media (min-width: 1025px)
 SASS_EOF
 
-
+sass --watch src/sass/app.sass public/style/app.css
 
 tree -d
 
 echo
 echo "###################################"
 echo "#                                 #"
-echo "#      AUTOEXEC EST EXECUTE       #"
+echo "#      AUTOEXEC EST EXECUTÉ       #"
 echo "#                                 #"
 echo "###################################"
 echo
