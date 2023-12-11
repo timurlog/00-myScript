@@ -4,8 +4,6 @@ mkdir -p public/{style/,js/,page/,assets/{image/,fonts/,video/,music/}}
 mkdir -p src/sass/modules
 touch index.html public/style/app.css public/js/main.js src/sass/app.sass src/sass/_variables.sass src/sass/_fonts.sass src/sass/modules/_body.sass src/sass/modules/_header.sass src/sass/modules/_footer.sass src/sass/modules/_main.sass src/sass/modules/_section-1.sass
 npm init
-npm install bootstrap@5.3.2
-npm install @popperjs/core
 npm install @fortawesome/fontawesome-free
 
 # index.html
@@ -20,7 +18,6 @@ cat <<HTML_EOF > index.html
     <!-- ########## LINKS ########### -->
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="./public/style/app.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
 
 </head>
@@ -45,8 +42,6 @@ cat <<HTML_EOF > index.html
 
     <!-- ########## SCRIPTS ######### -->
     <script src="./public/js/main.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
 
 </body>
 </html>
