@@ -242,8 +242,6 @@ cat <<SASS_EOF > src/sass/modules/_footer.sass
 @media (min-width: 1025px)
 SASS_EOF
 
-
-
 tree -d
 
 echo
@@ -253,3 +251,5 @@ echo "#      AUTOEXEC EST EXECUTE       #"
 echo "#                                 #"
 echo "###################################"
 echo
+
+code .
